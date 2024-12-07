@@ -52,3 +52,13 @@ buttonSong.onclick= function(){
         mySong.play()
     }
 }
+
+/* --------------tắt animation------------*/
+document.addEventListener("DOMContentLoaded", function () {
+    var textHappy = document.querySelector('.textHappynewyear');
+    if (textHappy) {
+        textHappy.style.animation = 'none';
+        textHappy.style.transform = 'translateY(0)';
+    }
+});
+
