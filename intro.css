@@ -57,12 +57,14 @@ body{
     z-index: 100000;
 }
 .textHappynewyear{
-    position: absolute;
+    /*position: absolute;
     width: 500px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     top: 20px;
+    transform: translateY(-130px);
+    animation: textHappyTransform 1s 3s forwards;*/
     transform: translateY(0); /* Đặt chữ ở vị trí cố định */
     animation: none; /* Ngăn không áp dụng bất kỳ hiệu ứng nào */
 }
