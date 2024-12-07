@@ -55,10 +55,27 @@ buttonSong.onclick= function(){
 
 /* --------------tắt animation------------*/
 document.addEventListener("DOMContentLoaded", function () {
-    var textHappy = document.querySelector('.textHappynewyear');
-    if (textHappy) {
-        textHappy.style.animation = 'none';
-        textHappy.style.transform = 'translateY(0)';
+    var h1 = document.querySelector('.title h1');
+    var p = document.querySelector('.content p');
+    var h3 = document.querySelector('.content h3');
+
+    if (h1) {
+        h1.style.animation = 'none';
+        h1.style.transition = 'none';
+        h1.style.marginTop = '0';
+    }
+
+    if (p) {
+        p.style.animation = 'none';
+        p.style.transition = 'none';
+        p.style.opacity = '1';
+    }
+
+    if (h3) {
+        h3.style.animation = 'none';
+        h3.style.transition = 'none';
+        h3.style.marginTop = '0';
     }
 });
+
 
