@@ -57,7 +57,7 @@ body{
     z-index: 100000;
 }
 .textHappynewyear{
-    /*position: absolute;
+    position: absolute;
     width: 500px;
     height: 80px;
     display: flex;
@@ -65,9 +65,7 @@ body{
     top: 20px;
     transform: translateY(-130px);
     animation: textHappyTransform 1s 3s forwards;*/
-    transform: translateY(0); /* Đặt chữ ở vị trí cố định */
-    animation: none; /* Ngăn không áp dụng bất kỳ hiệu ứng nào */
-}
+    }
 @keyframes textHappyTransform{
     0%{
         transform: translateY(-130px);
@@ -1767,21 +1765,32 @@ body{
     margin-top: 10px;
     overflow: hidden;
 }
-.box-content .right .content .title h1{
+
+
+
+/*.box-content .right .content .title h1{
     margin-top: -40px;
     transition: 0.5s;
 }
 .slider3:hover .title h1{
     animation: title 2s forwards;
+}*/
+.box-content .right .content .title h1 {
+    margin-top: 0; /* Hiển thị ngay lập tức */
+    animation: none; /* Tắt animation */
+    transition: none; /* Loại bỏ transition */
 }
-@keyframes title{
+/*@keyframes title{
     0%{
         margin-top: -40px;
     }
     100%{
         margin-top: 0px;
     }
-}
+}*/
+
+
+
 .box-content .right .content p{
     padding: 30px 15px 0px 15px;
     text-align: center;
@@ -1790,17 +1799,26 @@ body{
     opacity: 0;
     transition: 1s;
 }
-.slider3:hover .content p{
+
+/*.slider3:hover .content p{
     animation: bodyContent 2s 1s forwards;
+}*/
+.box-content .right .content p {
+    opacity: 1; /* Hiển thị ngay lập tức */
+    animation: none; /* Tắt animation */
+    transition: none;
 }
-@keyframes bodyContent{
+
+/*@keyframes bodyContent{
     0%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
-}
+}*/
+
+
 .content .fixedContent{
     width: 250px;
     height: 80px;
@@ -1813,17 +1831,23 @@ body{
     padding: 20px 0px 0px 20px;
     margin-top: -50px;
 }
-.slider3:hover .content h3{
+/*.slider3:hover .content h3{
     animation: fixedContent 2s 2s forwards;
+}*/
+.box-content .right .content h3 {
+    margin-top: 0; /* Đặt lại vị trí */
+    animation: none;
+    transition: none;
 }
-@keyframes fixedContent{
+
+/*@keyframes fixedContent{
     0%{
         margin-top: -50px;
     }
     100%{
         margin-top: 0px;
     }
-}
+}*/
 
 /* ----active------ */
 
